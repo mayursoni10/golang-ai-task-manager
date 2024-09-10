@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/models"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/models"
 	"net/http"
 )
 

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/config"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/config"
 	"gorm.io/gorm"
 )
 

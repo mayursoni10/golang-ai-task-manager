@@ -2,8 +2,8 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/middleware"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/models"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/middleware"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/models"
 	"golang.org/x/crypto/bcrypt"
 	"net/http"
 )

@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/config"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/handlers"
-	"github.com/mayrusoni10/golang-ai-task-manager/internal/middleware"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/config"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/handlers"
+	"github.com/mayursoni10/golang-ai-task-manager/internal/middleware"
 	"log"
 )
 
@@ -19,6 +19,9 @@ func main() {
 	// Initialize the database
 	config.InitDB()
 
+	// Initialize OpenAI client
+	config.InitOpenAI()
+
 	r := gin.Default()
 
 	// Public routes
@@ -26,6 +29,7 @@ func main() {
 	{
 		public.POST("/login", handlers.LoginHandler)
 		public.POST("/register", handlers.RegisterHandler)
+		public.POST("/chat", handlers.ChatHandler) // Add chat handler
 	}
 
 	// Protected routes
